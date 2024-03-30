@@ -1,0 +1,270 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato";
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  display: flex;
+}
+
+.topnav a {
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.aboutcoffee,
+.grinder,
+.brewingmethods {
+  padding: 40px;
+  font-size: 20px;
+}
+
+.display-container {
+  position: relative;
+}
+
+.pourover,
+.imersion,
+.percolation,
+.vacuumfiltration {
+  padding-left: 20px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+}
+
+.image1 {
+  grid-area: image1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.paralax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.75;
+}
+
+.bgimg {
+  width: 100%;
+  height: auto;
+}
+
+.bgimg-1 {
+  background-image: url(img/bg-img1.jpg);
+  min-height: 1200px;
+}
+
+.bgimg-2 {
+  background-image: url(img/bg-img-grinders2.webp);
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url(img/bg-img-brewing.jpg);
+  min-height: 400px;
+}
+
+.bgimg-hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 12px 24px;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  text-align: center;
+  font-size: 70px;
+  letter-spacing: 15px;
+  color: #fff;
+  background-color: #000;
+}
+
+.centered-title {
+  left: 50%;
+  text-align: center;
+  padding: 12px 24px;
+  white-space: nowrap;
+  font-size: 70px;
+  letter-spacing: 15px;
+  color: #fff;
+  background-color: #000;
+  opacity: 0.8;
+}
+
+.intro {
+  text-align: center;
+  white-space: nowrap;
+  font-size: 30px;
+  color: #000;
+}
+
+.aboutcoffee {
+  margin-top: 50px;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  align-items: baseline;
+  padding: 30px;
+}
+
+.contactheader {
+  grid-column: 1 / span 2;
+  text-align: center;
+}
+
+.contactfiller {
+  text-align: center;
+  font-size: 25px;
+}
+
+form {
+  padding: 37.5px;
+  margin: 50px 0;
+}
+
+.email {
+  float: right;
+  width: 45%;
+}
+
+input[type="text"],
+[type="email"],
+select,
+textarea {
+  background: none;
+  border: none;
+  border-bottom: solid 2px #474544;
+  color: #474544;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0em 0 1.875em 0;
+  padding: 0 0 0.875em 0;
+  width: 100%;
+  transition: all 0.3s;
+}
+
+input[type="text"]:focus,
+[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  padding: 0 0 0.875em 0;
+}
+
+.message {
+  float: none;
+}
+
+.name {
+  float: left;
+  width: 45%;
+}
+
+select {
+  background: url("https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png")
+    no-repeat right;
+  outline: none;
+  appearance: none;
+}
+
+.subject {
+  width: 100%;
+}
+
+.telephone {
+  width: 100%;
+}
+
+textarea {
+  line-height: 150%;
+  height: 150px;
+  resize: none;
+  width: 100%;
+}
+
+#form_button {
+  background: none;
+  border: solid 2px #474544;
+  color: #474544;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 20px 35px;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+#form_button:hover {
+  background: #474544;
+  color: #f2f3eb;
+}
+
+.footer {
+  background-color: #a4a7ab;
+  padding: 12px 20px 12px 20px;
+  text-align: center;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
